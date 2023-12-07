@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>LingoLinker</title>
+</head>
+<body>
+    <div class="navContainer">
+        <h1 id="lingoLinker">LingoLinker</h1>
+        <p id="lingoLinkerSmall">(Translate English typo to any language)</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="translator">
+        <p class="inputTextHeading">Put the text here:</p>
+        <textarea name="inputText" id="inputText" cols="30" rows="10"></textarea><br>
+        <select name="langauges" id="languages">
+            <option value="">--Please Choose a language into which the typo be translated--</option>
+            <option value="hi">Hindi</option>
+            <option value="es">Spanish </option>
+            <option value="de">German</option>
+            <option value="ja">Japanese</option>
+            <option value="ru">Russian</option>
+            <option value="ar">Arabic</option>
+        </select><br>
+        <button id="button" onclick="getText()">Submit</button>
+        <p id="convertHeading">Converted text will appear here:</p><br>
+    </div>
+    <div class="convertedTextContainer">
+        <p id="convertedText"></p>
+    </div>
+    </body>
+<script src="index.js"></script>
+</html>

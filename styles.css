@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    background: orange;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+}
+ul{
+    display: flex;
+    list-style: none;
+    margin: auto;
+}
+li{
+    margin: 2vh 2vw;
+    background: yellow;
+    border: 5px solid yellow;
+    border-radius: 1vh;
+    cursor: pointer;
+}
+li:hover{
+    border: 5px solid orange;
+    transition: .3s;
+    background: orange;
+}
+a{
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+}
+#lingoLinker{
+    color: yellow;
+    font-size: 7vh;
+
+}
+.navContainer{
+    margin: auto;
+    margin-top: 4vh;
+    border: 6px solid green;
+    border-radius: 1vh;
+    text-align: center;
+    width: 90vw;
+    background: green;
+}
+.translator{
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+.inputTextHeading{
+    font-size: 4vh;
+    margin: auto;
+    margin-top: 5vh;
+    background: green;
+    color: yellow;
+}
+#inputText{
+    width: 50vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    background: yellow;
+    border-radius: 1vh;
+    color: black;
+    font-size: 24px;
+    padding: 1vh 1vw;
+    outline: none;
+}
+#languages{
+    background: green;
+    color: yellow;
+    border: none;
+    outline: none;
+    border-radius: 1vh;
+    width: 20vw;
+    text-align: center;
+    height: 4vh;
+}
+#languages:hover{
+    cursor: pointer;
+}
+#button{
+    background: green;
+    color: yellow;
+    border: none;
+    outline: none;
+    border-radius: 1vh;
+    width: 10vw;
+    text-align: center;
+    height: 4vh;
+    margin-top: 4vh;
+}
+#button:hover{
+    background: yellow;
+    color: green;
+    cursor: pointer;
+}
+#convertHeading{
+    font-size: 4vh;
+    margin: auto;
+    margin-top: 5vh;
+    background: green;
+    color: yellow;
+}
+.answer{
+    height: 80vh;
+}
+.convertedTextContainer{
+    height: 70vh;
+}
+.aboutContainer{
+    padding: 6%;
+}
+#convertedText{
+    width: 80vw;
+    margin: auto;
+    background: yellow;
+    border: 6px solid yellow;
+    border-radius: 1vh;
+    font-size: 24px;
+    height: 50vh;
+    overflow: auto;
+}
+#lingoLinkerSmall{
+    color: yellow;
+}
+@media screen and (max-width: 767px) {
+    #inputText{
+        width: 80vw;
+        height: 15vh;
+        font-size: 17px;
+    }
+    #languages{
+        width: 60vw;
+    }
+    #button{
+        width: 20vw;
+    }
+    #convertedText{
+        font-size: 14px;
+        width: 90vw;
+        margin-top: 4vh;
+    }
+    .translator{
+        height: 65vh;
+    }
+}
